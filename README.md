@@ -8,7 +8,7 @@ $\LaTeX$ est un outil libre (et donc gratuit) qui permet de produire des documen
 
 ## Programme du module par demi-journée
 
-* Matin  : introduction et premiers pas – venir avec ses documents et son ordinateur portable.
+* Matin  : introduction et premiers pas 
   
   1. Tour de table.
   1. Mise en place sur vos ordinateurs personnels. Rédaction d'un premier document.
@@ -17,9 +17,10 @@ $\LaTeX$ est un outil libre (et donc gratuit) qui permet de produire des documen
 
 * Après-midi : Structure d'un document texte. Examen de quelques éléments particuliers
     
-  1. Organisation du discours écrit : principes; articles, rapports, thèse, livre.
-  1. Éléments particuliers d'un document : figures (schémas, images, etc.); tables et tableaux; bibliographie; mathématiques, algorithmes, etc.
+  1. Classes de documents.
   1. Usage de GIT pour versionner et collaborer.
+  1. Reproduction de votre propre document.
+  1. Figures de qualité ?
   1. Création de présentations avec `beamer`.
 
 ## Liste de tâches
