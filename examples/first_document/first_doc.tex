@@ -1,0 +1,94 @@
+\documentclass[10pt,a4paper]{article}
+% PACKAGES
+\usepackage[utf8]{inputenc}
+\usepackage[francais]{babel}
+\usepackage[T1]{fontenc}
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdftitle={Un document vraiment indispensable},
+    pdfauthor={ED SIE !!!},
+    pdfpagemode=FullScreen,
+    }
+
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+
+\usepackage{lipsum}
+
+%SETUP
+\title{Mon premier document \LaTeX}
+\author{ED SIE}
+
+% DOCUMENT
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+\section{Introduction}
+Du texte 
+\subsection{Une première sous section}
+Du texte 
+\subsection{Une autre sous section}
+Du texte 
+
+%\lipsum % Du texte pou meubler
+
+
+\section{Environnements utiles}
+\label{sec:environnements}
+
+Ceci est une liste à puces:
+
+\begin{itemize}
+	\item Une chose.
+	\item Une autre chose.
+\end{itemize}
+
+Une énumération:
+
+\begin{enumerate}
+	\item Une chose.
+	\item Une autre chose.
+\end{enumerate}
+
+%\lipsum % Du texte pou meubler
+
+\section{Les maths}
+Après avoir parlé des environnements dans la partie \ref{sec:environnements}. On décide maintenant de parler des mathématiques et de leur écriture dans \LaTeX. On peut écrire des équations:
+
+$$
+u_{ij}(x) = \int_0^\infty \alpha_{ij}(t,x) dt
+$$
+
+On peut aussi écrire des maths en ligne, par exemple $\alpha = 5$ est un environnement mathématique en ligne. On peut aussi numéroter les équations comme dans l'indispensable équation \ref{eq:awesome_equation} ci-dessous:
+
+\begin{equation}
+	U = \sum_{i=0}^N \dfrac{a_i}{b_i}
+	\label{eq:awesome_equation}
+\end{equation}
+
+Il existe d'autres environnements de maths, par exemple:
+
+\begin{align}
+	f(x) & = (x+2)(x+4)   \\
+	     & = x^2 + 6x + 8 
+\end{align}
+
+\begin{equation}
+	g(x) = \left\lbrace 
+	\begin{split}
+		5 \mbox{ si } x \in ]-\infty, 5] \\
+		0 \mbox{ otherwise }	
+	\end{split}	
+	\right.
+\end{equation}
+
+\end{document}
