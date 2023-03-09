@@ -21,6 +21,10 @@
 \usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
 
 \usepackage{lipsum}
+\usepackage{booktabs}
+\usepackage{lscape} % provides \landscape
+\usepackage[math]{blindtext} % random text with inline math
+\usepackage{multirow}
 
 %SETUP
 \title{Mon premier document \LaTeX}
@@ -91,4 +95,55 @@ Il existe d'autres environnements de maths, par exemple:
 	\right.
 \end{equation}
 
+\section{Des tableaux avec \LaTeX}
+
+On peut définir des tableaux avec l'environnement \og tabular \fg. 
+
+% penser à charger \usepackage{booktabs} en haut
+
+\begin{tabular}{lcr}
+	\toprule
+	\textbf{Animal} & \textbf{Classe} & \textbf{Couleur}           \\
+	\midrule
+	Lapin           & Mammifère      & Gris ou blanc              \\
+	Truite          & Poisson         & Argentée avec des reflets \\
+	\bottomrule
+\end{tabular}
+
+Il existe aussi en environnement flottant dédié aux tableaux, c'est \og table \fg. Petit exemple, la table \ref {tab:my_tab} est allée ailleurs dans le document, elle est en page \pageref{tab:my_tab}:
+
+\blindtext[5] % random text
+
+\begin{table}
+	\begin{center}
+		\begin{tabular}{lcr}
+			\toprule
+			\textbf{Animal} & \textbf{Classe} & \textbf{Couleur}           \\
+			\midrule
+			Loutre & \multirow{2}{*}{Mammifère} & Noire ? \\			
+			Lapin           &  & Gris ou blanc              \\
+			Truite          & Poisson         & Argentée avec des reflets \\
+			\bottomrule
+		\end{tabular}
+		\caption{Une table définie avec l'environnement table qui la rend flottante.}
+		\label{tab:my_tab}
+	  \end{center}
+	\end{table}
+	
+\blindtext[5] % random text
+	
+On peut aussi faire des tableaux en format paysage si ils sont trop grands horizontalement:
+	
+\begin{landscape}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|}\hline
+
+Object & Apple & Banana & Stone & Cake & Tree & Flower & House & Door & Car & Plane & Chair \\ \hline 
+
+Quantity in Thousands & 35  &  25  & 23 & 33 & 43  & 52 & 64 & 75 & 86  & 94  & 122  \\ \hline 
+
+\end{tabular}
+\end{landscape}
+
+Pour aller plus loin sur les tableaux, il existe des éditeurs en ligne comme \href{https://www.tablesgenerator.com/latex_tables#}{tablesgenerator}.
+	
 \end{document}
