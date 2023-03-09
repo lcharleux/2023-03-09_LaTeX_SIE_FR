@@ -25,6 +25,7 @@
 \usepackage{lscape} % provides \landscape
 \usepackage[math]{blindtext} % random text with inline math
 \usepackage{multirow}
+\usepackage{graphicx}
 
 %SETUP
 \title{Mon premier document \LaTeX}
@@ -145,5 +146,31 @@ Quantity in Thousands & 35  &  25  & 23 & 33 & 43  & 52 & 64 & 75 & 86  & 94  & 
 \end{landscape}
 
 Pour aller plus loin sur les tableaux, il existe des éditeurs en ligne comme \href{https://www.tablesgenerator.com/latex_tables#}{tablesgenerator}.
+
+
+\section{Les figures: comment faire}
+
+% penser à charger \usepackage{graphicx}
+On peut utiliser la commande \og includegraphics \fg pour intégrer des images un peu partout:
+
+\begin{center}
+\includegraphics[width=.8\textwidth]{figures/firefox.jpg} % 80% de la largeur du texte.
+\end{center}
+
+On peut aussi le faire dans le texte \includegraphics[width=2.5mm]{figures/firefox.jpg} et ça devrait marcher. 
+Il existe une environnement flottant associé aux figures, comme le montre la figure \ref{fig:panda_roux} (p. \pageref{fig:panda_roux}).
+
+\begin{figure}[b!]
+\begin{center}
+\includegraphics[width=1.\textwidth]{figures/firefox.jpg} % 80% de la largeur du texte.
+\end{center}
+\caption{Le Petit panda ou Panda roux (Ailurus fulgens), parfois appelé « Panda fuligineux » ou « Panda éclatant », est un mammifère protégé et en danger d'extinction de la famille des Ailuridés. 
+Le panda roux est originaire de l'Himalaya et du Sud-Ouest de la Chine et préfère vivre dans les forêts montagneuses mixtes tempérées de la région, riches en bambou. }
+\label{fig:panda_roux}
+\end{figure}
+
+\blindtext[10]
+
+\blindtext[10]
 	
 \end{document}
