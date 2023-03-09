@@ -21,7 +21,8 @@
 \begin{frame}{Mon premier transparent}
 	\begin{columns}[c]
 		\column{.5\textwidth}
-		\includegraphics[width =\textwidth]{figures/frog.jpg}
+		\only<1>{\includegraphics[width =\textwidth]{figures/frog.jpg}}
+		\only<2>{\includegraphics[width =\textwidth]{figures/frog_blur.jpg}}
 		\column{.5\textwidth}
 		\begin{block}{A savoir}
 			\begin{itemize}
@@ -30,6 +31,12 @@
 				\item Faire des colonnes.
 			\end{itemize}
 		\end{block}
+		\begin{alertblock}{A savoir}
+			\begin{itemize}
+				\item <1-> Des grenouilles
+				\item <2->Modifiées !
+			\end{itemize}
+		\end{alertblock}
 	\end{columns}
 \end{frame} 
 
