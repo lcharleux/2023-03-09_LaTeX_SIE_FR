@@ -25,12 +25,12 @@ $\LaTeX$ est un outil libre (et donc gratuit) qui permet de produire des documen
 
 ## Liste de tâches
 
-- [ ] First article
-- [ ] Segmentation
-- [ ] Maths
-- [ ] Floats
-- [ ] Tables
-- [ ] Bibliography
+- [x] First article
+- [x] Segmentation
+- [x] Maths
+- [x] Floats
+- [x] Tables
+- [x] Bibliography
 - [ ] Other classes (`thesis`, `elsarticle`, ...)
 - [ ] Managing your supervisors/colleagues with GIT
 - [ ] Slides with Beamer
