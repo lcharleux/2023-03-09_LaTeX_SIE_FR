@@ -41,3 +41,7 @@ article/article.pdf
 *.toc
 *.nav
 *.snm
+data_and_plots/data/data_table.tex
+data_and_plots/data/data_full.csv
+data_table.tex
+data_full.csv
